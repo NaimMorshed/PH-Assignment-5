@@ -71,3 +71,23 @@ body{
 .margin-left-5{
     margin-left: 5px;
 }
+#meal-div{
+    display: none;
+    background-color: white;
+    width: 500px;
+    height: 680px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#meal-div-2{
+    margin: 25px 25px;
+}
+#meal-div>img{
+    width: 100%;
+    height: 322px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.badge-custom{
+    background-color: green !important;
+}
