@@ -5,6 +5,15 @@
 body{
     background-color: #EDD263;
 }
+#back-button{
+    border: 1px solid #3B2D64;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+#back-button:hover{
+    border: 2px solid black;
+    margin-right: 18px;
+}
 #logo-text{
     color: #3B2D64;
     font-weight: bolder;
@@ -15,20 +24,19 @@ body{
     border-radius: 6px;
     margin: 10px;
 }
-#category-card{
+#meal-card{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 50px auto;
 }
-#searched-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 50px auto;
+.meal-items:hover{
+    box-shadow: 5px 5px 10px gray;
+    cursor: pointer;
 }
+
+/*Search-Bar*/
 #search-section{
     margin-top: 50px;   
 }
@@ -71,23 +79,74 @@ body{
 .margin-left-5{
     margin-left: 5px;
 }
-#meal-div{
-    display: none;
-    background-color: white;
-    width: 500px;
-    height: 680px;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-#meal-div-2{
-    margin: 25px 25px;
-}
-#meal-div>img{
+
+/*Meal-Details*/
+.custom-img{
     width: 100%;
-    height: 322px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    height: 300px;
+}
+.card{
+    max-width: 500px;
 }
 .badge-custom{
-    background-color: green !important;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: 0px 5px;
+    margin-left: 5px;
+}
+#meal-details{
+    display: none;
+}
+
+/*Initial-Section*/
+#initial-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#initial-message>div>img{
+    margin-top: 10px;
+    width: 60%;
+}
+#initial-div{
+    margin-top: 50px;
+    width: 350px;
+    height: 350px;
+    background-image: url('images/back.png');
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 5px;
+}
+#initial-div:hover{
+    background-image: url('');
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    cursor: default;
+}
+#initial-div>div{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-style-1{
+    color: #3B2D64;
+    font-weight: bold;
+}
+.text-style-2{
+    color: #36642d;
+    font-weight: bold;
+}
+
+/*Alert*/
+.custom-alert{
+    width: 310px;
+}
+#alert{
+    display: none;
 }
