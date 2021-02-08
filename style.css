@@ -5,6 +5,15 @@
 body{
     background-color: #EDD263;
 }
+.nav-text{
+    font-weight: bold;
+    color: grey;
+}
+.custom-nav-bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 #back-button{
     border: 1px solid #3B2D64;
     margin-right: 20px;
